@@ -38,7 +38,15 @@ cyber-insurance-analyzer/
 
 ## Development
 
+### Prerequisites
+- Python 3.11+
+- [uv](https://docs.astral.sh/uv/) for Python dependency management
+- Node.js 18+ for frontend development
+
 ### Backend
+- Install dependencies: `uv sync`
+- Activate virtual environment: `uv shell` or `source .venv/bin/activate`
+- Run development server: `uv run uvicorn app.main:app --reload`
 - FastAPI server runs on http://localhost:8000
 - API documentation available at http://localhost:8000/docs
 
